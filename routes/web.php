@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('currencies', 'CurrenciesController@index')->name('currencies.index');
+Route::get('currencies/{id}', 'CurrenciesController@show')->name('currencies.show');
